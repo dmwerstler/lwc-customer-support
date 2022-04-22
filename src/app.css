@@ -1,0 +1,32 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.app {
+    background-color: #fafaf9;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.one {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2/2;
+    grid-row: 1;
+}
+
+ul {
+    list-style-type: disc;
+}

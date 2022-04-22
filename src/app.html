@@ -1,0 +1,45 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">{title}</h1>
+		<p> Track your order details and access the following actions:</p>
+		<div class="slds-p-top_large wrapper">
+			<div class="one">
+				<ul>
+					<li>Order Status</li>
+					<li>Track Order</li>
+					<li>Cancel Order</li>
+					<li>Request Documents</li>
+				</ul>
+			</div>
+			<div class="two">
+				<ul>
+					<li>Request Damage</li>
+					<li>Request a Return</li>
+					<li>Report Incomplete Order</li>
+					<li>Billing Related Requests</li>
+				</ul>
+			</div>
+		</div>
+	
+		
+	  <p class="slds-p-top_large">Please provide your order information below to locate your order.  If you do not know your order number (confirmation number), search using your customer purchase order number, online cart number, quote number or by First and Last Name (please note, this option is only available for our individual/personal accounts). </p>
+
+    
+    <lightning-combobox
+      name="progress"
+      label="Country"
+      value={value}
+      placeholder="Please select your country"
+      options={options} 
+ 		  variant="label-inline" ></lightning-combobox>
+		<lightning-input type="text" name="postalcode" variant="label-inline" label="Zip/Postal Code" ></lightning-input>
+		<lightning-input type="date" name="input1" variant="label-inline" label="Enter a date" ></lightning-input>
+		
+		<h2 class="slds-text-heading_medium slds-p-top_large">Resources</h2>
+		<a href="https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.get_started_introduction">
+			Developer Guide
+		</a><br/>
+		<a href="https://developer.salesforce.com/docs/component-library/overview/components">Component Reference</a>
+
+	</div>
+</template>

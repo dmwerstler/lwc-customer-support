@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/dmwerstler.lwc-customer-support",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve L80592Gx1GlRSiBkhVSr --open"
+  }
+}
